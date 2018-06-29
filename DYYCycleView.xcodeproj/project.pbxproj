@@ -12,6 +12,12 @@
 		28DFAFE320E4C41E006CC025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DFAFE120E4C41E006CC025 /* Main.storyboard */; };
 		28DFAFE520E4C421006CC025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DFAFE420E4C421006CC025 /* Assets.xcassets */; };
 		28DFAFE820E4C421006CC025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DFAFE620E4C421006CC025 /* LaunchScreen.storyboard */; };
+		28DFAFF120E4C461006CC025 /* DYY_CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFAFF020E4C461006CC025 /* DYY_CycleView.swift */; };
+		28DFAFF320E4C4FF006CC025 /* DYY_CycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFAFF220E4C4FF006CC025 /* DYY_CycleLayout.swift */; };
+		28DFAFF520E4C59F006CC025 /* DYY_PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFAFF420E4C59F006CC025 /* DYY_PageControl.swift */; };
+		28DFAFF720E4C83C006CC025 /* DYYCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFAFF620E4C83C006CC025 /* DYYCycleViewCell.swift */; };
+		28DFAFF920E63561006CC025 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DFAFF820E63561006CC025 /* back.png */; };
+		4162B5D44D0071939AFB3C08 /* Pods_DYYCycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD32E3BA1CA0AE108BF5EE1 /* Pods_DYYCycleView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		28DFAFE420E4C421006CC025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28DFAFE720E4C421006CC025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28DFAFE920E4C421006CC025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DFAFF020E4C461006CC025 /* DYY_CycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYY_CycleView.swift; sourceTree = "<group>"; };
+		28DFAFF220E4C4FF006CC025 /* DYY_CycleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYY_CycleLayout.swift; sourceTree = "<group>"; };
+		28DFAFF420E4C59F006CC025 /* DYY_PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYY_PageControl.swift; sourceTree = "<group>"; };
+		28DFAFF620E4C83C006CC025 /* DYYCycleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYCycleViewCell.swift; sourceTree = "<group>"; };
+		28DFAFF820E63561006CC025 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		6EF3AD27497FDFCB5B45F7EE /* Pods-DYYCycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYYCycleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYYCycleView/Pods-DYYCycleView.debug.xcconfig"; sourceTree = "<group>"; };
+		A74D0F1CB68CD8AF0737D881 /* Pods-DYYCycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYYCycleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYYCycleView/Pods-DYYCycleView.release.xcconfig"; sourceTree = "<group>"; };
+		DAD32E3BA1CA0AE108BF5EE1 /* Pods_DYYCycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYYCycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4162B5D44D0071939AFB3C08 /* Pods_DYYCycleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1859DF3363FC63BB68714EEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD32E3BA1CA0AE108BF5EE1 /* Pods_DYYCycleView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28DFAFD120E4C41E006CC025 = {
 			isa = PBXGroup;
 			children = (
 				28DFAFDC20E4C41E006CC025 /* DYYCycleView */,
 				28DFAFDB20E4C41E006CC025 /* Products */,
+				DE6EB01A0830D905C84FC64E /* Pods */,
+				1859DF3363FC63BB68714EEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +79,8 @@
 		28DFAFDC20E4C41E006CC025 /* DYYCycleView */ = {
 			isa = PBXGroup;
 			children = (
+				28DFAFF820E63561006CC025 /* back.png */,
+				28DFAFEF20E4C42F006CC025 /* 轮播图 */,
 				28DFAFDD20E4C41E006CC025 /* AppDelegate.swift */,
 				28DFAFDF20E4C41E006CC025 /* ViewController.swift */,
 				28DFAFE120E4C41E006CC025 /* Main.storyboard */,
@@ -64,6 +91,26 @@
 			path = DYYCycleView;
 			sourceTree = "<group>";
 		};
+		28DFAFEF20E4C42F006CC025 /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				28DFAFF020E4C461006CC025 /* DYY_CycleView.swift */,
+				28DFAFF220E4C4FF006CC025 /* DYY_CycleLayout.swift */,
+				28DFAFF420E4C59F006CC025 /* DYY_PageControl.swift */,
+				28DFAFF620E4C83C006CC025 /* DYYCycleViewCell.swift */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		DE6EB01A0830D905C84FC64E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3AD27497FDFCB5B45F7EE /* Pods-DYYCycleView.debug.xcconfig */,
+				A74D0F1CB68CD8AF0737D881 /* Pods-DYYCycleView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28DFAFEC20E4C421006CC025 /* Build configuration list for PBXNativeTarget "DYYCycleView" */;
 			buildPhases = (
+				4DAD8E76D0A14FE00EC0059F /* [CP] Check Pods Manifest.lock */,
 				28DFAFD620E4C41E006CC025 /* Sources */,
 				28DFAFD720E4C41E006CC025 /* Frameworks */,
 				28DFAFD820E4C41E006CC025 /* Resources */,
+				C4762A1F1E369E8BB4F3A6FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +173,63 @@
 			files = (
 				28DFAFE820E4C421006CC025 /* LaunchScreen.storyboard in Resources */,
 				28DFAFE520E4C421006CC025 /* Assets.xcassets in Resources */,
+				28DFAFF920E63561006CC025 /* back.png in Resources */,
 				28DFAFE320E4C41E006CC025 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DAD8E76D0A14FE00EC0059F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYYCycleView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4762A1F1E369E8BB4F3A6FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DYYCycleView/Pods-DYYCycleView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYYCycleView/Pods-DYYCycleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28DFAFD620E4C41E006CC025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DFAFF120E4C461006CC025 /* DYY_CycleView.swift in Sources */,
+				28DFAFF520E4C59F006CC025 /* DYY_PageControl.swift in Sources */,
+				28DFAFF720E4C83C006CC025 /* DYYCycleViewCell.swift in Sources */,
 				28DFAFE020E4C41E006CC025 /* ViewController.swift in Sources */,
 				28DFAFDE20E4C41E006CC025 /* AppDelegate.swift in Sources */,
+				28DFAFF320E4C4FF006CC025 /* DYY_CycleLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +371,13 @@
 		};
 		28DFAFED20E4C421006CC025 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF3AD27497FDFCB5B45F7EE /* Pods-DYYCycleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3284H893FZ;
 				INFOPLIST_FILE = DYYCycleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +391,13 @@
 		};
 		28DFAFEE20E4C421006CC025 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74D0F1CB68CD8AF0737D881 /* Pods-DYYCycleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3284H893FZ;
 				INFOPLIST_FILE = DYYCycleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
